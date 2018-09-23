@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.app;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,12 +7,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
+import com.example.entity.Employee;
+import com.example.entity.QEmployee;
+import com.example.repo.EmployeeRepository;
 import com.querydsl.core.types.OrderSpecifier;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@Component
+//@Component 
 public class QueryDslExampleRunner implements ApplicationRunner {
 
     @Autowired
